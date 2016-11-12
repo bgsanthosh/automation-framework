@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuite name="sample testsuite 2" desc="description of the test suite">
+
+    <testcase name="multipleDataProviderTest1" desc="description of the test case">
+
+
+        <step name="multipleDataProviderTestStep-1" desc="Step1">
+            <ConfigRESTRequest name="DropWizardBIR"/>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="multipleDataProviderTest2" desc="description of the test case">
+
+
+        <step name="multipleDataProviderTestStep-1" desc="Step1">
+            <ConfigRESTRequest name="DropWizardBIR"/>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+</testsuite>

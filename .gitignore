@@ -1,0 +1,13 @@
+*__pycache__
+*.py~
+*.pyc
+*.swp
+.classpath
+.project
+target/
+.idea
+*.iml
+*.ipr
+*.iws
+.settings
+.DS_Store

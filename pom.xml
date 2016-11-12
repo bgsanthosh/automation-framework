@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.flipkart.cx.taf</groupId>
+    <artifactId>automation-framework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+    </properties>
+    <repositories>
+        <repository>
+            <id>flipkart-libs-release-local</id>
+            <name>Flipkart local release libraries</name>
+            <url>http://artifactory.nm.flipkart.com:8081/artifactory/libs-release-local</url>
+        </repository>
+
+        <repository>
+            <id>flipkart-libs-releases-local</id>
+            <name>Flipkart local releases libraries</name>
+            <url>http://artifactory.nm.flipkart.com:8081/artifactory/libs-releases-local</url>
+        </repository>
+
+        <repository>
+            <name>Flipkart Libs Snapshot</name>
+            <id>artifactory-libs-snapshot</id>
+            <url>http://artifactory.nm.flipkart.com:8081/artifactory/libs-snapshot</url>
+        </repository>
+        <repository>
+            <name>Flipkart Libs Releases</name>
+            <id>artifactory-libs-snapshots</id>
+            <url>http://artifactory.nm.flipkart.com:8081/artifactory/libs-snapshot-local</url>
+        </repository>
+
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>release-local</id>
+            <url>http://artifactory.nm.flipkart.com:8081/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-release-local</id>
+            <url>http://artifactory.nm.flipkart.com:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-xml</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.restassured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.uncommons</groupId>
+            <artifactId>reportng</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
+    </dependencies>
+    <!--
+<build>
+    <plugins>
+    <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+            <source>1.7</source>
+            <target>1.7</target>
+
+        </configuration>
+    </plugin>
+    </plugins>
+
+
+</build>
+-->
+    <!--
+    <profiles>
+    <profile>
+        <id>testing</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.14</version>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>/Users/santhosh.b/flipkart/automation/taf/automation-framework/src/main/resources/testng.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                        <reportsDirectory>target/surefire-reports/sample</reportsDirectory>
+                        <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>com.flipkart.framework.internal.listener.InvokedMethodListenerImpl,com.flipkart.framework.internal.listener.ExecutionListenerImpl,com.flipkart.framework.internal.listener.SuiteListenerImpl</value>
+                        </property>
+                        </properties>
+
+                        <systemPropertyVariables>
+                                <request.config.file.path>/Users/santhosh.b/flipkart/automation/taf/automation-framework/src/main/resources/template.xml</request.config.file.path>
+                                <testsuite.file.path>/Users/santhosh.b/flipkart/automation/taf/automation-framework/src/main/resources/</testsuite.file.path>
+                                <config.file.path>/Users/santhosh.b/flipkart/automation/taf/automation-framework/src/main/resources/config.properties</config.file.path>
+                        </systemPropertyVariables>
+
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+    </profiles>
+        -->
+
+</project>

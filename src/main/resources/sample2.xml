@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuite name="sample testsuite 2" desc="description of the test suite">
+
+    <testcase name="sample2TestCase2" desc="description of the test case">
+        <parameters name="TestCase_Parameter2">
+            <parameter name="name1" value="value"/>
+            <parameter name="name2" value="value1"/>
+        </parameters>
+
+        <step name="sample2TestCase2Step1" desc="description of the test step1">
+            <parameters name="sample2TestCase2Step_Parameter1">
+                <parameter name="sample2TestCase2s1" value="sample2TestCase2v1"/>
+                <parameter name="sample2TestCase2s2" value="sample2TestCase2v2"/>
+            </parameters>
+
+
+            <RESTRequest name="sample2TestCase2name" path="workflow/start/6" method="POST" endPoint="http://cs-skynet-app-a-0002.stage.ch.flipkart.com:27606/">
+                <QueryParams>
+                    <queryParam name="sample2TestCase2name1" value="sample2TestCase2value2"/>
+                    <queryParam name="sample2TestCase2name2" value="sample2TestCase2value1"/>
+                </QueryParams>
+                <Headers>
+                    <header name="sample2TestCase2name" value="sample2TestCase2value"/>
+                    <header name="sample2TestCase2name" value="sample2TestCase2value"/>
+                </Headers>
+                <body>RestRequest Body
+                </body>
+            </RESTRequest>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+
+    </testcase>
+
+</testsuite>

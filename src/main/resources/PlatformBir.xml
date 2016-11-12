@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuite name="sample testsuite 2" desc="description of the test suite">
+
+    <testcase name="PlatformNewDCBir" desc="description of the test case">
+
+
+        <step name="sampleTest" desc="BirHost1">
+<!--
+            <RESTRequest name="Name1" path="tasks/rotation_status?state=bir" method="POST" endPoint="${url}">
+
+                <Headers>
+                    <header name="Content-Type" value="application/json"/>
+                </Headers>
+                <body>
+                </body>
+            </RESTRequest>
+            -->
+            <ConfigRESTRequest name="Name1"/>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="PlatformNewDCBir" desc="description of the test case">
+
+
+        <step name="sampleTest" desc="BirHost1">
+            <!--
+                        <RESTRequest name="Name1" path="tasks/rotation_status?state=bir" method="POST" endPoint="${url}">
+
+                            <Headers>
+                                <header name="Content-Type" value="application/json"/>
+                            </Headers>
+                            <body>
+                            </body>
+                        </RESTRequest>
+                        -->
+            <ConfigRESTRequest name="Name2"/>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+</testsuite>

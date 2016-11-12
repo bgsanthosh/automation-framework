@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuite name="sample testsuite" desc="testsuite having testcases with multiple permutations">
+    <!--testsuite level parameters-->
+    <parameters name="TestSuite_Parameters">
+        <parameter name="name1" value="value1"/>
+        <parameter name="name2" value="value2"/>
+    </parameters>
+
+    <testcase name="testcase1" desc="description of the test case" group="FUNCTIONAL">
+        <!--testcase level parameters, these override testsuite level parameters-->
+        <parameters name="TestCase_Parameters">
+            <parameter name="name1" value="value1"/>
+            <parameter name="name2" value="value2"/>
+        </parameters>
+
+        <!--steps for all permutations in this testcase-->
+        <step name="Step1" desc="description of the test step1">
+            <!--step level parameters, these override testcase level parameters-->
+            <parameters name="Step1_Parameters">
+                <parameter name="s1" value="v1"/>
+                <parameter name="s2" value="v2"/>
+            </parameters>
+
+            <RESTRequest name="resource name" path="/path/to/resource" action="GET|POST|PUT" endPoint="endPointPath">
+                <QueryParams>
+                    <queryParam name="name" value="value2"/>
+                    <queryParam name="name" value="value1"/>
+                </QueryParams>
+                <Headers>
+                    <header name="name" value="value"/>
+                    <header name="name" value="value"/>
+                </Headers>
+                <body>RestRequest Body
+                </body>
+            </RESTRequest>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+        </step>
+
+        <step/>
+
+        <!--permutations for this testcase-->
+        <permutations name="permutations_for_testcase1">
+            <permutation name="permutation1" desc="this is permutation 1">
+                <!-- permutation level parameters, these override step level parameters-->
+                <parameters name="perm1_parameters">
+                    <parameter name="p1" value="v1"/>
+                    <parameter name="p2" value="v2"/>
+                </parameters>
+            </permutation>
+
+            <permutation name="permutation2" desc="this is permutation 2">
+                <parameters name="perm2_parameters">
+                    <parameter name="p11" value="v11"/>
+                    <parameter name="p22" value="v22"/>
+                </parameters>
+            </permutation>
+        </permutations>
+    </testcase>
+
+</testsuite>

@@ -1,0 +1,206 @@
+{
+  "testsuite": {
+    "name": "sample testsuite",
+    "desc": "description of the test suite",
+    "parameters": [
+      {
+        "name": "TestSuite_Parameters1 ",
+        "parameter": [
+          {
+            "name1" : "value1",
+            "name2" : "value2"
+          }
+        ]
+      },
+      {
+        "name": "TestSuite_Parameters2",
+        "parameter": [
+          {
+            "name1" : "value1",
+            "name2" : "value2",
+            "name3" : "value3"
+          }
+        ]
+      }
+    ],
+    "testcase": [
+      {
+        "name": "testMe",
+        "desc": "description of the test case",
+        "groups": "SANITY,REGRESSION,FUNCTIONAL",
+        "parameters": {
+          "name": "TestCase_Parameter2",
+          "parameter": [
+            {
+              "name1" : "value1",
+              "name2" : "value2",
+              "name3" : "value3"
+            }
+          ]
+        },
+        "step": [
+          {
+            "name": "Step1",
+            "desc": "description of the test step1",
+            "parameters": [
+              {
+                "name": "Step_Parameter1",
+                "parameter": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              },
+              {
+                "name": "Step Parameter2",
+                "parameter": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              }
+            ],
+            "RESTRequest": {
+              "name": "resource name",
+              "path": "/santhosh/",
+              "action": "GET|POST|PUT",
+              "endPoint": "endPointPath",
+              "QueryParams": {
+                "queryParam": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              },
+              "Headers": {
+                "header": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              },
+              "body": "RestRequest Body"
+            },
+            "RESTResponse": {
+              //TODO
+            }
+          },
+          {
+            "name": "Step2",
+            "desc": "description of the test step2",
+            "parameters": [
+              {
+                "name": "Step_Parameter1",
+                "parameter": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              },
+              {
+                "name": "Step Parameter2",
+                "parameter": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              }
+            ],
+            "ConfigRESTRequest": {
+              "name": "Name1",
+              "QueryParams": {
+                "queryParam": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              },
+              "Headers": {
+                "header": [
+                  {
+                    "name1" : "value1",
+                    "name2" : "value2",
+                    "name3" : "value3"
+                  }
+                ]
+              },
+              "body": "Overriding Body Value"
+            },
+            "RESTResponse": {
+              //TODO
+            }
+          }
+        ]
+      },
+      {
+        "name": "testMe2",
+        "desc": "test 2",
+        "parameters": {
+          "name": "testMe2 testcase param",
+          "parameter": [
+            {
+              "name1" : "value1",
+              "name2" : "value2",
+              "name3" : "value3"
+            }
+          ]
+        },
+        "step": {
+          "name": "Step1",
+          "desc": "description of the test step1",
+          "parameters": {
+            "name": "testMe2Step_Parameter1",
+            "parameter": [
+              {
+                "name1" : "value1",
+                "name2" : "value2",
+                "name3" : "value3"
+              }
+            ]
+          },
+          "RESTRequest": {
+            "name": "resource name",
+            "path": "/santhosh/",
+            "method": "GET|POST|PUT",
+            "QueryParams": {
+              "queryParam": [
+                {
+                  "name1" : "value1",
+                  "name2" : "value2",
+                  "name3" : "value3"
+                }
+              ]
+            },
+            "Headers": {
+              "header": [
+                {
+                  "name1" : "value1",
+                  "name2" : "value2",
+                  "name3" : "value3"
+                }
+              ]
+            },
+            "body": "RestRequest Body"
+          },
+          "RESTResponse": {
+            //TODO
+          }
+        }
+      }
+    ]
+  }
+}

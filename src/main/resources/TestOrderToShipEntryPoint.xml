@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuite name="EntryPoint Enable TestSuite" desc="This suite captures the testcases for DT Enabling Test Suite">
+
+    <testcase name="testOrderToShipDTEnable" desc="Order Status in Created State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD598043122007"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTEnable" desc="Order Status in Approved State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD525101290000"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTDisable" desc="Order Status in Cancelled State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD521101620002"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTEnable" desc="Order Status in Ready_to_Ship State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD521100160000"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTEnable" desc="Order Status in Return_Requested State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD520101910000"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTEnable" desc="Order Status in on_hold State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD521101540000"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTEnable" desc="Order Status in Shipped State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD519101210000"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTDisable" desc="Order Status in Delivered State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD502101630000"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testOrderToShipDTEnable" desc="Order Status in Returned State - CreateCase DT Enable">
+
+        <step name="entryPoint" desc="Step1">
+            <parameters name="context">
+                <parameter name="process_id" value="10"/>
+                <parameter name="customer_id" value="AC8DZO2V5EU3MNIGFSBP4O4OFI3W0WFK"/>
+                <parameter name="channel" value="VOICE"/>
+                <parameter name="client" value="sa"/>
+                <parameter name="agent_id" value="santhosh.b"/>
+                <parameter name="role" value="MANAGER"/>
+                <parameter name="order_id" value="OD509091760000"/>
+            </parameters>
+            <ConfigRESTRequest name="singleEntryPointPayload"/>
+            <RESTResponse>
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+</testsuite>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuite name="sample testsuite" desc="description of the test suite">
+
+
+    <parameters name="TestSuite_Parameters1 ">
+        <parameter name="name1" value="value"/>
+        <parameter name="name2" value="value1"/>
+    </parameters>
+
+    <parameters name="TestSuite_Parameters2">
+        <parameter name="name1" value="value"/>
+        <parameter name="name2" value="value1"/>
+    </parameters>
+
+
+    <testcase name="testMe" desc="description of the test case" groups="SANITY,REGRESSION,FUNCTIONAL">
+        <parameters name="TestCase_Parameter2">
+            <parameter name="name1" value="value"/>
+            <parameter name="name2" value="value1"/>
+        </parameters>
+
+        <step name="Step1" desc="description of the test step1">
+            <parameters name="Step_Parameter1">
+                <parameter name="s1" value="v1"/>
+                <parameter name="s2" value="v2"/>
+            </parameters>
+            <parameters name="Step Parameter2">
+                <parameter name="s21" value="v21"/>
+                <parameter name="s22" value="v22"/>
+            </parameters>
+
+            <RESTRequest name="resource name" path="/santhosh/" action="GET|POST|PUT" endPoint="endPointPath">
+                <QueryParams>
+                    <queryParam name="name" value="value2"/>
+                    <queryParam name="name" value="value1"/>
+                </QueryParams>
+                <Headers>
+                    <header name="name" value="value"/>
+                    <header name="name" value="value"/>
+                </Headers>
+                <body>RestRequest Body
+                </body>
+            </RESTRequest>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+        <step name="Step2" desc="description of the test step2">
+            <parameters name="Step_Parameter1">
+                <parameter name="s1" value="v1"/>
+                <parameter name="s2" value="v2"/>
+            </parameters>
+            <parameters name="Step Parameter2">
+                <parameter name="s21" value="v21"/>
+                <parameter name="s22" value="v22"/>
+            </parameters>
+
+            <ConfigRESTRequest name="Name1">
+                <QueryParams>
+                    <queryParam name="OverridingName1" value="OverridingName1"/>
+                    <queryParam name="OverridingName2" value="OverridingValue2"/>
+                </QueryParams>
+                <Headers>
+                    <header name="OverridingName1" value="OverridingValue1"/>
+                    <header name="OverridingName2" value="OverridingValue2"/>
+                </Headers>
+                <body>Overriding Body Value
+                </body>
+            </ConfigRESTRequest>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+    <testcase name="testMe2" desc="test 2">
+        <parameters name="testMe2 testcase param">
+            <parameter name="testMe2name1" value="testMe2value"/>
+            <parameter name="testMe2name2" value="testMe2value1"/>
+        </parameters>
+
+        <step name="Step1" desc="description of the test step1">
+            <parameters name="testMe2Step_Parameter1">
+                <parameter name="testMe2s1" value="testMe2v1"/>
+                <parameter name="testMe2s2" value="testMe2v2"/>
+            </parameters>
+
+            <RESTRequest name="resource name" path="/santhosh/" method="GET|POST|PUT">
+                <QueryParams>
+                    <queryParam name="testMe2name" value="testMe2value2"/>
+                    <queryParam name="testMe2name" value="testMe2value1"/>
+                </QueryParams>
+                <Headers>
+                    <header name="testMe2name" value="testMe2value"/>
+                    <header name="testMe2name" value="testMe2value"/>
+                </Headers>
+                <body>RestRequest Body
+                </body>
+            </RESTRequest>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+
+    </testcase>
+
+</testsuite>

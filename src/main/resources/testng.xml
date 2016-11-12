@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Sample test Suite" parallel="methods">
+
+    <listeners>
+        <listener class-name="com.flipkart.framework.internal.listener.InvokedMethodListenerImpl"/>
+        <listener class-name="com.flipkart.framework.internal.listener.ExecutionListenerImpl"/>
+        <listener class-name="com.flipkart.framework.internal.listener.SuiteListenerImpl"/>
+
+    </listeners>
+    <!--
+    <test name="Sample test 2">
+        <classes>
+            <class name="test.crm.SampleTest2"/>
+
+        </classes>
+    </test>
+    -->
+    <test name="Params">
+        <classes>
+            <!--
+            <class name="test.crm.FrameworkSingleDataProvider"/>-->
+            <class name="test.crm.TestOrderToShipEntryPoint"/>
+        </classes>
+    </test>
+</suite>

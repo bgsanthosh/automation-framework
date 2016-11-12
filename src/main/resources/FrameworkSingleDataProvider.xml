@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuite name="sample testsuite 2" desc="description of the test suite">
+
+    <testcase name="singleDataProviderTest" desc="description of the test case">
+
+
+        <step name="singleDataProviderTestStep-1" desc="Step1">
+            <ConfigRESTRequest name="DropWizardBIR"/>
+            <RESTResponse>
+                <!-- TODO -->
+            </RESTResponse>
+
+        </step>
+
+    </testcase>
+
+</testsuite>

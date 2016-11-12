@@ -1,0 +1,49 @@
+<ConfigRequests>
+
+    <RESTRequest name="DropWizardBIR" path="/tasks/rotation_status" method="POST" endPoint="${knitEndPoint}">
+
+        <Headers>
+            <header name="Content-Type" value="application/json"/>
+        </Headers>
+        <body>
+        </body>
+    </RESTRequest>
+
+    <RESTRequest name="singleEntryPointPayload" path="/workflow/entryPoints " method="POST" endPoint="${skynetEndPoint}">
+
+        <Headers>
+            <header name="Content-Type" value="application/json"/>
+        </Headers>
+        <body>
+            {"process_list":[{"process_id":${process_id},"process_version":null}],"request_params":{"customer_id":"${customer_id}","channel":"${channel}","client":"${client}","agent_id":"${agent_id}","old_incident_id":"","role":"${role}"},"order_id":"${order_id}"}
+        </body>
+    </RESTRequest>
+<!--
+    <RESTRequest id="Name2">
+        <QueryParams>
+            <queryParam name="n2q1" value="n2v1"/>
+            <queryParam name="n2q2" value="n2v2"/>
+        </QueryParams>
+        <Headers>
+            <header name="n2h1" value="n2h1v1"/>
+            <header name="n2h2" value="n2h2v2"/>
+        </Headers>
+        <body><![CDATA[satho
+        asdfdasf
+        asdf
+        asdf
+        asd
+        f]]>
+        </body>
+    </RESTRequest>
+-->
+
+    <RESTRequest name="Name2" path="tasks/rotation_status?state=bir" method="POST" endPoint="${url1}">
+
+        <Headers>
+            <header name="Content-Type" value="application/json"/>
+        </Headers>
+        <body>
+        </body>
+    </RESTRequest>
+</ConfigRequests>
