@@ -1,10 +1,10 @@
 package test.crm;
 
-import com.flipkart.framework.clients.RESTClient;
-import com.flipkart.framework.data.RESTResponse;
-import com.flipkart.framework.data.Request;
-import com.flipkart.framework.data.TestCase;
-import com.flipkart.framework.data.TestRunner;
+import com.santhosh.framework.clients.RESTClient;
+import com.santhosh.framework.data.RESTResponse;
+import com.santhosh.framework.data.Request;
+import com.santhosh.framework.data.TestCase;
+import com.santhosh.framework.data.XMLDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class TestNGMultipleDataProvider {
 
 
-    @Test(dataProvider = "xmlDataProvider" , dataProviderClass = com.flipkart.framework.data.XMLDataProvider.class)
+    @Test(dataProvider = "xmlDataProvider" , dataProviderClass = XMLDataProvider.class)
     public void multipleDataProviderTest(TestCase testCase) throws Exception   {
 
         Request request = testCase.getTestStepByName("multipleDataProviderTestStep-1").getRequest();

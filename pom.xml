@@ -136,7 +136,7 @@
                         <properties>
                         <property>
                             <name>listener</name>
-                            <value>com.flipkart.framework.internal.listener.InvokedMethodListenerImpl,com.flipkart.framework.internal.listener.ExecutionListenerImpl,com.flipkart.framework.internal.listener.SuiteListenerImpl</value>
+                            <value>InvokedMethodListenerImpl,ExecutionListenerImpl,SuiteListenerImpl</value>
                         </property>
                         </properties>
 

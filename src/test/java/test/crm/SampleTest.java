@@ -1,9 +1,7 @@
 package test.crm;
 
-import com.flipkart.framework.annotation.Data;
-import com.flipkart.framework.data.TestCase;
-import com.flipkart.framework.data.TestRunner;
-import com.flipkart.framework.data.XMLDataProvider;
+import com.santhosh.framework.data.TestCase;
+import com.santhosh.framework.data.XMLDataProvider;
 import org.testng.annotations.Test;
 
 

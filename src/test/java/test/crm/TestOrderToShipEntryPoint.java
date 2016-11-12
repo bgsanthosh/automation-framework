@@ -1,11 +1,11 @@
 package test.crm;
 
-import com.flipkart.framework.clients.RESTClient;
-import com.flipkart.framework.data.RESTResponse;
-import com.flipkart.framework.data.TestCase;
-import com.flipkart.framework.data.TestRunner;
+import com.santhosh.framework.clients.RESTClient;
+import com.santhosh.framework.data.RESTResponse;
+import com.santhosh.framework.data.TestCase;
 import com.jayway.restassured.path.json.JsonPath;
 import com.jayway.restassured.response.Response;
+import com.santhosh.framework.data.XMLDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
  */
 public class TestOrderToShipEntryPoint {
 
-    @Test(dataProvider = "xmlDataProvider", dataProviderClass = com.flipkart.framework.data.XMLDataProvider.class)
+    @Test(dataProvider = "xmlDataProvider", dataProviderClass = XMLDataProvider.class)
     public void testOrderToShipDTEnable(TestCase testCase)  throws Exception {
 
         RESTResponse restResponse = RESTClient.INSTANCE.execute(testCase.getTestStepByName("entryPoint").getRequest());
@@ -24,7 +24,7 @@ public class TestOrderToShipEntryPoint {
         Assert.assertEquals(actualValid, true, "Valid Flag is incorrect");
     }
 
-    @Test(dataProvider = "xmlDataProvider", dataProviderClass = com.flipkart.framework.data.XMLDataProvider.class)
+    @Test(dataProvider = "xmlDataProvider", dataProviderClass = XMLDataProvider.class)
     public void testOrderToShipDTDisable(TestCase testCase)  throws Exception {
 
         RESTResponse restResponse = RESTClient.INSTANCE.execute(testCase.getTestStepByName("entryPoint").getRequest());

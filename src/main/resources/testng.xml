@@ -3,9 +3,9 @@
 <suite name="Sample test Suite" parallel="methods">
 
     <listeners>
-        <listener class-name="com.flipkart.framework.internal.listener.InvokedMethodListenerImpl"/>
-        <listener class-name="com.flipkart.framework.internal.listener.ExecutionListenerImpl"/>
-        <listener class-name="com.flipkart.framework.internal.listener.SuiteListenerImpl"/>
+        <listener class-name="com.santhosh.framework.internal.listener.InvokedMethodListenerImpl"/>
+        <listener class-name="com.santhosh.framework.internal.listener.ExecutionListenerImpl"/>
+        <listener class-name="com.santhosh.framework.internal.listener.SuiteListenerImpl"/>
 
     </listeners>
     <!--
